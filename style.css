@@ -1,0 +1,58 @@
+body{
+    position: relative;
+    animation: fondo 60s infinite;
+}
+@keyframes fondo{
+    0%, 100%{
+        background-color: rgb(225, 225, 255);
+    }
+    10%{
+        background-color: rgb(255, 224, 224);
+    }
+    20%{
+        background-color: rgb(255, 255, 225);
+    }
+    30%{
+        background-color: rgb(227, 255, 227);
+    }
+    40%{
+        background-color: rgb(225, 255, 255);
+    }
+    50%{
+        background-color: rgb(228, 228, 253);
+    }
+    60%{
+        background-color: rgb(255, 230, 255);
+    }
+    70%{
+        background-color: rgb(255, 237, 237);
+    }
+    80%{
+        background-color: rgb(255, 231, 231);
+    }
+    90%{
+        background-color: rgb(255, 255, 255);
+    }
+}
+.particles{
+    height:100vh;
+    width: 100vw;
+    opacity: .4;
+    position: fixed;
+    z-index: -1;
+}
+#root{
+    position: relative;
+    z-index: 2;
+}
+.fondo{
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+}
+@media only screen and (max-width:900px){
+    .fondo{
+        height: 100vh;
+        width: auto;
+    }
+}
